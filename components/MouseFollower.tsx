@@ -13,7 +13,7 @@ const MouseFollower = () => {
       gsap.to(mouseFollowerRef.current, {
         x: e.clientX,
         y: e.clientY,
-        duration: 0.9,
+        duration: 0.7,
       });
     });
   }, []);
