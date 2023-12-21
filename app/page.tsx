@@ -27,6 +27,18 @@ export default function Home() {
           </div>
         </div>
       </nav>
+
+      {/* Hero Title */}
+      <div className="grid grid-cols-4 leading-tight mt-24">
+        <div className="col-span-3 text-[11.5vw] p-0 ">Full Stack</div>
+        <div className="col-span-1 col-start-4 self-end text-darkGray font-medium text-[20px]">
+          portfolio@2024
+        </div>
+        <div className="col-span-full justify-self-end text-[11.5vw] p-0">
+          Web Developer
+        </div>
+      </div>
+
     </div>
   );
 }
