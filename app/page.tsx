@@ -4,6 +4,7 @@ export default function Home() {
   return (
     <div className="w-full min-h-screen relative">
       <MouseFollower />
+
       {/* Grid lines */}
       <div className="grid grid-cols-4 h-screen w-full absolute -z-10 top-0 left-0 pointer-events-none">
         <div className="col-span-1 border-r-[1px] border-l-[1px] border-gridLines" />
@@ -39,6 +40,17 @@ export default function Home() {
         </div>
       </div>
 
+      {/* Hero Text */}
+      <div className="grid grid-cols-4">
+        <div className="col-span-1 col-start-1 self-end text-darkGray font-medium text-[20px]">{`(scroll)`}</div>
+        <div className="col-span-2 col-start-3 p-0">
+          Hello, I am <span className="underline">Adam</span>. Welcome to my
+          personal portfolio, where I showcase my passion for creating
+          exceptional web experiences.
+        </div>
+      </div>
+
+      {/* <div className="h-screen bg-black"></div> */}
     </div>
   );
 }
