@@ -3,7 +3,7 @@ import MouseFollower from "../components/MouseFollower";
 export default function Home() {
   return (
     <div className="w-full">
-      <div className=" min-h-screen flex flex-col justify-between relative pb-6">
+      <div className=" min-h-screen flex flex-col justify-between relative pb-5">
         <MouseFollower />
 
         {/* Grid lines */}
@@ -15,7 +15,7 @@ export default function Home() {
         </div>
 
         {/* Navbar */}
-        <nav className="grid grid-cols-4 py-6 text-[20px]">
+        <nav className="grid grid-cols-4 py-5 text-[20px]">
           <div className="col-span-1">Adam Pap.</div>
           <div className="col-span-1">
             Currently available for <br /> full time positions
