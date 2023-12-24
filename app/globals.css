@@ -10,13 +10,27 @@ body {
 }
 
 @layer components {
-  .cursor-follower {
+  .cursor-outer {
     height: 4vw;
     width: 4vw;
     position: fixed;
     top: 0;
     left: 0;
     border: 3px solid #e32636;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: -100;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .cursor-inner {
+    height: 8px;
+    width: 8px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #e32636;
     border-radius: 50%;
     pointer-events: none;
     overflow: hidden;
