@@ -22,7 +22,7 @@ export default function Home() {
           </div>
           <div className="col-span-1">hello@adampap.com</div>
           <div className="col-span-1">
-            <div className="flex gap-14">
+            <div className="flex gap-12">
               <a href="/projects">Projects</a>
               <a href="/about">About</a>
               <a href="/contact">Contact</a>
