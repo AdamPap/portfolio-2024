@@ -53,6 +53,20 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className="grid grid-cols-4 my-40">
+        <div>
+          <h1 className="text-[9vw] leading-[0.8]">Works</h1>
+        </div>
+        <h3 className="col-start-3 text-darkGray font-medium text-[32px] self-end">
+          Recent <br /> projects
+        </h3>
+        <h3 className="text-darkGray font-medium text-[32px] self-end">
+          001/
+          <br />
+          004
+        </h3>
+      </div>
+
 
       <div className="h-screen bg-black"></div>
     </div>
