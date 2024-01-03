@@ -46,14 +46,29 @@ body {
     overflow: hidden;
   }
 
+  .image-container:nth-child(1) .image-parallax {
+    background-image: url("/images/project-1.jpg");
+  }
+
   .image-container:nth-child(2) {
     margin-top: 16rem;
   }
+  .image-container:nth-child(2) .image-parallax {
+    background-image: url("/images/project-3.jpg");
+  }
+
   .image-container:nth-child(3) {
     margin-top: 6rem;
   }
+  .image-container:nth-child(3) .image-parallax {
+    background-image: url("/images/project-2.jpg");
+  }
+
   .image-container:nth-child(4) {
     margin-top: 20rem;
+  }
+  .image-container:nth-child(4) .image-parallax {
+    background-image: url("/images/project-4.jpg");
   }
 
   .image-parallax {
@@ -63,21 +78,5 @@ body {
     width: 100%;
     height: 80vh;
     position: relative;
-  }
-
-  .image-container > .image-parallax:nth-child(1) {
-    background-image: url("/images/project-1.jpg");
-  }
-
-  .image-container > .image-parallax:nth-child(2) {
-    background-image: url("/images/project-3.jpg");
-  }
-
-  .image-container > .image-parallax:nth-child(3) {
-    background-image: url("/images/project-2.jpg");
-  }
-
-  .image-container > .image-parallax:nth-child(4) {
-    background-image: url("/images/project-4.jpg");
   }
 }
