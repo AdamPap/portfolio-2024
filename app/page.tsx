@@ -1,6 +1,7 @@
 import MouseFollower from "@/components/MouseFollower";
 import ProjectImage from "@/components/ProjectImage";
 import GridLines from "@/components/GridLines";
+import Navbar from "@/components/Navbar";
 import SectionHeadingGrid from "@/components/SectionHeadingGrid";
 
 export default function Home() {
@@ -10,24 +11,7 @@ export default function Home() {
         <MouseFollower />
         <GridLines />
 
-        {/* Navbar */}
-        <nav className="grid grid-cols-4 py-5 text-[20px]">
-          <div className="col-span-1">
-            <span>Adam Pap</span>
-            <span className="text-crimson">.</span>
-          </div>
-          <div className="col-span-1">
-            Currently available for <br /> full time positions
-          </div>
-          <div className="col-span-1">hello@adampap.com</div>
-          <div className="col-span-1">
-            <div className="flex gap-12">
-              <a href="/projects">Projects</a>
-              <a href="/about">About</a>
-              <a href="/contact">Contact</a>
-            </div>
-          </div>
-        </nav>
+        <Navbar />
 
         {/* Hero Title */}
         <div className="grid grid-cols-4 leading-tight">
