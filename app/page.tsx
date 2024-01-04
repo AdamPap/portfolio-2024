@@ -1,6 +1,7 @@
 import MouseFollower from "@/components/MouseFollower";
 import ProjectImage from "@/components/ProjectImage";
 import GridLines from "@/components/GridLines";
+import SectionHeadingGrid from "@/components/SectionHeadingGrid";
 
 export default function Home() {
   return (
@@ -52,20 +53,19 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Projects section */}
-      <div className="grid grid-cols-4 my-40">
-        <div>
-          <h1 className="text-[9vw] leading-[0.8]">Works</h1>
-        </div>
-        <h3 className="col-start-3 text-darkGray font-medium text-[32px] self-end">
+      <SectionHeadingGrid
+        bigHeading="Works"
+        smallHeading={
+          <span>
           Recent <br /> projects
-        </h3>
-        <h3 className="text-darkGray font-medium text-[32px] self-end">
-          001/
-          <br />
-          004
-        </h3>
-      </div>
+          </span>
+        }
+        supportingText={
+          <span>
+            001/ <br /> 004
+          </span>
+        }
+      />
 
       <div className="flex flex-wrap justify-between projects-container">
         {[1, 2, 3, 4].map((_, index) => (
