@@ -25,8 +25,8 @@ const ProjectImage = () => {
       {
         scrollTrigger: {
           trigger: imageContainerRef.current.parentElement,
-          start: "top 80%",
-          end: "bottom center",
+          start: "top 85%",
+          end: "bottom 15%",
           scrub: true,
           markers: true,
         },
