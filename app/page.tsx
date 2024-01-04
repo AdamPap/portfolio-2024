@@ -5,14 +5,8 @@ export default function Home() {
     <div className="w-full">
       <div className=" min-h-screen flex flex-col justify-between relative pb-5">
         <MouseFollower />
+        <GridLines />
 
-        {/* Grid lines */}
-        <div className="grid grid-cols-4 min-h-screen w-full fixed px-6 -z-[200] top-0 left-0 pointer-events-none">
-          <div className="col-span-1 border-r-[1px] border-l-[1px] border-gridLines" />
-          <div className="col-span-1 border-r-[1px] border-gridLines" />
-          <div className="col-span-1 border-r-[1px] border-gridLines" />
-          <div className="col-span-1 border-r-[1px] border-gridLines" />
-        </div>
 
         {/* Navbar */}
         <nav className="grid grid-cols-4 py-5 text-[20px]">
