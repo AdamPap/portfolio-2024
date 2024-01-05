@@ -12,8 +12,8 @@ body {
 
 @layer components {
   .cursor-outer {
-    height: 4vw;
-    width: 4vw;
+    height: 4rem;
+    width: 4rem;
     position: fixed;
     top: 0;
     left: 0;
