@@ -1,4 +1,4 @@
-import MouseFollower from "@/components/MouseFollower";
+import { CustomCursor } from "@/components/CustomCursor";
 import ProjectImage from "@/components/ProjectImage";
 import GridLines from "@/components/GridLines";
 import Navbar from "@/components/Navbar";
@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div className="w-full">
       <div className="min-h-screen flex flex-col justify-between pb-5 relative">
-        <MouseFollower />
+        <CustomCursor />
         <GridLines />
 
         <Navbar />

@@ -3,7 +3,7 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-const MouseFollower = () => {
+const CustomCursor = () => {
   const cursorOuterRef = useRef<HTMLDivElement>(null);
   const cursorInnerRef = useRef<HTMLDivElement>(null);
 
@@ -40,4 +40,4 @@ const MouseFollower = () => {
   );
 };
 
-export default MouseFollower;
+export { CustomCursor };
