@@ -1,8 +1,10 @@
 import { createContext, useState } from "react";
 
+type CursorSize = "normal" | "large";
+
 interface CursorSizeContext {
   cursorSize: string;
-  setCursorSize: (cursorSize: string) => void;
+  setCursorSize: (cursorSize: CursorSize) => void;
 }
 
 interface CursorProviderProps {
