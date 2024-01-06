@@ -2,8 +2,11 @@
 
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { useCursorSize } from "@/hooks/useCursorSize";
 
 const CustomCursor = () => {
+  const { cursorSize } = useCursorSize();
+
   const cursorOuterRef = useRef<HTMLDivElement>(null);
   const cursorInnerRef = useRef<HTMLDivElement>(null);
 
@@ -30,7 +33,9 @@ const CustomCursor = () => {
     <>
       <div
         ref={cursorOuterRef}
-        className="cursor-outer"
+        className={`cursor-outer cursor-transition ${
+          cursorSize === "large" ? "w-24 h-24" : "w-16 h-16"
+        }`}
       />
       <div
         ref={cursorInnerRef}
