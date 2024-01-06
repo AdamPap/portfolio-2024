@@ -1,3 +1,4 @@
+import NavLink from "@/components/NavLink";
 import React from "react";
 
 const Navbar = () => {
@@ -13,9 +14,9 @@ const Navbar = () => {
       <div className="col-span-1">hello@adampap.com</div>
       <div className="col-span-1">
         <div className="flex gap-12">
-          <a href="/projects">Projects</a>
-          <a href="/about">About</a>
-          <a href="/contact">Contact</a>
+          <NavLink href="/projects">Projects</NavLink>
+          <NavLink href="/about">About</NavLink>
+          <NavLink href="/contact">Contact</NavLink>
         </div>
       </div>
     </nav>
