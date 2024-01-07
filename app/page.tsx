@@ -2,7 +2,7 @@ import { CustomCursor } from "@/components/CustomCursor";
 import GridLines from "@/components/GridLines";
 import HeroContent from "@/components/HeroContent";
 import Navbar from "@/components/Navbar";
-import ProjectList from "@/components/ProjectList";
+import ProjectList from "@/components/project/ProjectList";
 import SectionHeadingGrid from "@/components/SectionHeadingGrid";
 
 export default function Home() {

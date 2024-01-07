@@ -1,4 +1,4 @@
-import Project from "@/components/Project";
+import Project from "@/components/project/Project";
 import React from "react";
 import project1 from "../public/images/project-1.jpg";
 import project2 from "../public/images/project-2.jpg";

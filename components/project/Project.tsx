@@ -1,4 +1,4 @@
-import ProjectImage from "@/components/ProjectImageParallax";
+import ProjectImage from "@/components/project/ProjectImageParallax";
 import { StaticImageData } from "next/image";
 import React from "react";
 
