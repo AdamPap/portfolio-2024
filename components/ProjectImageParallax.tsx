@@ -4,7 +4,11 @@ import React, { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const ProjectImage = () => {
+interface Props {
+  projectIndex: number;
+}
+
+const ProjectImageParallax: React.FC<Props> = ({ projectIndex }) => {
   const imageContainerRef = React.useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -40,10 +44,10 @@ const ProjectImage = () => {
     <div className="image-container">
       <div
         ref={imageContainerRef}
-        className="image-parallax"
+        className={`image-parallax bg-[url('/images/project-${projectIndex}.jpg')]`}
       ></div>
     </div>
   );
 };
 
-export default ProjectImage;
+export default ProjectImageParallax;
