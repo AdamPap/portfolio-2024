@@ -6,6 +6,7 @@ interface ProjectProps {
   title: string;
   description: string;
   image: StaticImageData;
+  techStack: string[];
   link: string;
   index: number;
 }
@@ -14,6 +15,7 @@ const Project: React.FC<ProjectProps> = ({
   title,
   description,
   image,
+  techStack,
   link,
   index,
 }) => {
@@ -32,7 +34,7 @@ const Project: React.FC<ProjectProps> = ({
         index={index}
         image={image}
       />
-      <div>{title}</div>
+      <div className="">{title}</div>
     </div>
   );
 };
