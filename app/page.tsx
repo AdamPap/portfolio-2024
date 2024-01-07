@@ -1,9 +1,9 @@
 import { CustomCursor } from "@/components/CustomCursor";
-import ProjectImage from "@/components/ProjectImage";
 import GridLines from "@/components/GridLines";
-import Navbar from "@/components/Navbar";
-import SectionHeadingGrid from "@/components/SectionHeadingGrid";
 import HeroContent from "@/components/HeroContent";
+import Navbar from "@/components/Navbar";
+import ProjectList from "@/components/ProjectList";
+import SectionHeadingGrid from "@/components/SectionHeadingGrid";
 
 export default function Home() {
   return (
@@ -31,11 +31,7 @@ export default function Home() {
         }
       />
 
-      <div className="flex flex-wrap justify-between projects-container">
-        {[1, 2, 3, 4].map((_, index) => (
-          <ProjectImage key={index} />
-        ))}
-      </div>
+      <ProjectList />
 
       <div className="h-screen bg-black mt-40"></div>
     </div>
