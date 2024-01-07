@@ -34,7 +34,18 @@ const Project: React.FC<ProjectProps> = ({
         index={index}
         image={image}
       />
-      <div className="">{title}</div>
+      <div className="text-[32px] mt-10 font-bold">{title}</div>
+      <div className="flex text-darkGray mt-1">
+        {techStack.map((tech, index) => (
+          <div
+            key={tech}
+            className="text-[26px] font-normal"
+          >
+            {tech}
+            {index !== techStack.length - 1 && <span className="mx-3">⋅</span>}
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
