@@ -46,46 +46,12 @@ body {
   }
 
   .image-container {
-    width: 40%;
     height: 60vh;
     position: relative;
     overflow: hidden;
   }
 
-  .image-container:nth-child(1) {
-    width: 50%;
-  }
-  .image-container:nth-child(1) .image-parallax {
-    background-image: url("/images/project-1.jpg");
-  }
-
-  .image-container:nth-child(2) {
-    margin-top: 16rem;
-    height: 70vh;
-  }
-  .image-container:nth-child(2) .image-parallax {
-    background-image: url("/images/project-3.jpg");
-  }
-
-  .image-container:nth-child(3) {
-    margin-top: -6rem;
-  }
-  .image-container:nth-child(3) .image-parallax {
-    background-image: url("/images/project-2.jpg");
-  }
-
-  .image-container:nth-child(4) {
-    margin-top: 20rem;
-    width: 50%;
-  }
-  .image-container:nth-child(4) .image-parallax {
-    background-image: url("/images/project-4.jpg");
-  }
-
-  .image-parallax {
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+  .next-image-container {
     width: 100%;
     height: 80vh;
     position: relative;
