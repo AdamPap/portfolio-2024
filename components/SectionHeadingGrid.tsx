@@ -1,18 +1,22 @@
 import React from "react";
 
+type Margin = "my-40" | "my-20" | "my-10";
+
 interface Props {
   bigHeading: React.ReactNode;
   smallHeading: React.ReactNode;
   supportingText: React.ReactNode;
+  margin?: Margin;
 }
 
 const SectionHeadingGrid: React.FC<Props> = ({
   bigHeading,
   smallHeading,
   supportingText,
+  margin,
 }) => {
   return (
-    <div className="grid grid-cols-4 my-40">
+    <div className={`grid grid-cols-4 ${margin}`}>
       <div>
         <h1 className="text-[9vw] leading-[0.8]">{bigHeading}</h1>
       </div>

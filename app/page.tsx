@@ -30,6 +30,7 @@ export default function Home() {
             001/ <br /> 004
           </span>
         }
+        margin="my-40"
       />
 
       <ProjectList />
