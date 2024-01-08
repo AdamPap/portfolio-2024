@@ -1,4 +1,5 @@
 import { CustomCursor } from "@/components/CustomCursor";
+import Footer from "@/components/Footer";
 import GridLines from "@/components/GridLines";
 import HeroContent from "@/components/HeroContent";
 import Navbar from "@/components/Navbar";
@@ -33,7 +34,9 @@ export default function Home() {
 
       <ProjectList />
 
-      <div className="h-screen bg-black mt-40"></div>
+      <div className="h-screen bg-slate-800 my-40"></div>
+
+      <Footer />
     </div>
   );
 }
